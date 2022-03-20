@@ -1,0 +1,377 @@
+﻿/* ===================== Fonts ===================== */
+@font-face {
+    font-family: 'effra';
+    src: url('fonts/Effra_Std_Rg.eot');
+    src: url('fonts/Effra_Std_Rg.eot#iefix') format('embedded-opentype'), url('fonts/Effra_Std_Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'effra bold';
+    src: url('fonts/Effra_Std_Bd.eot');
+    src: url('fonts/Effra_Std_Bd.eot#iefix') format('embedded-opentype'), url('fonts/Effra_Std_Bd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'effra light';
+    src: url('fonts/Effra_Std_Lt.eot');
+    src: url('fonts/Effra_Std_Lt.eot#iefix') format('embedded-opentype'), url('fonts/Effra_Std_Lt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===================== Master Page ===================== */
+body {
+    font-family: Open Sans;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -60px;
+}
+
+.body-content {
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 980px;
+}
+
+.push,
+#footer {
+    height: 60px;
+}
+
+header {
+    background-color: white;
+}
+
+.bg-light-gray {
+    background-color: #FBFBFB;
+}
+
+.bg-purple {
+    background-color: #353091;
+    position: absolute;
+    margin-top: 200px;
+}
+
+@media (max-width: 576px) {
+    .bg-purple {
+        background-color: #353091;
+    }
+}
+
+.verify-account {
+    min-height: 365px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .verify-account {
+        min-height: 550px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .verify-account {
+        min-height: 410px;
+    }
+}
+
+.menuSelected {
+    background-color: #014987;
+}
+
+.header-margin {
+    margin-top: 90px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav {
+    background-color: #0066B2;
+}
+
+    .nav > li {
+        padding: 5px 8px;
+    }
+
+        .nav > li:hover {
+            background-color: #014987;
+        }
+
+a {
+    color: #643590;
+    text-shadow: 0px 0px 0px #643590;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.primary-text {
+    color: #643590;
+}
+
+.secondary-text {
+    color: #353091;
+}
+
+.primary-gray-text {
+    color: #4C5458;
+}
+
+.dark-gray-text {
+    color: #767676;
+}
+
+.darkest-gray-text {
+    color: #001321;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+/* ===================== Logo ===================== */
+.nw-logo {
+    /* height: 45px;*/
+    width: 20%;
+    float: right;
+    padding: 5px 0px;
+}
+.sl-logo {
+    width:60%;
+}
+
+@media (max-width: 576px) {
+   /* .sl-logo {
+        height: 40px;
+    }*/
+
+    .nw-logo {
+        width: 30%;
+        padding: 0px;
+    }
+}
+
+/* ===================== Login ===================== */
+.login-box-left-panel {
+    background: url(images/SignIn.png) top right no-repeat #ffffff;
+    min-height: 466px;
+    background-size: cover;
+}
+
+.login-box-right-panel {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 41px;
+    padding-right: 67px;
+}
+
+.left-panel-margin-top {
+    margin-top: 230px;
+}
+
+@media (max-width: 576px) {
+    .btn-primary.w-login-button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .login-box-right-panel {
+        max-height: 822px;
+    }
+}
+/* ===================== Buttons ===================== */
+.btn {
+    border-radius: 2px;
+}
+
+    .btn:focus {
+        box-shadow: 0 0 0 0.2rem #84DFFF;
+    }
+
+.btn-default {
+    width: 170px;
+}
+
+.bt-primary {
+    background-color: #353091;
+    border: none;
+    color: #FFFFFF;
+}
+
+.btn-action {
+    width: 100%;
+    background-color: #FFCE51;
+    border: none;
+    color: #353091;
+}
+
+    .btn-action:not(:disabled):not(.disabled).active,
+    .btn-action:not(:disabled):not(.disabled):active,
+    .show > .btn-action.dropdown-toggle {
+        background-color: rgba(255, 206, 81, .6);
+    }
+
+    .btn-action:hover {
+        background-color: rgba(255, 206, 81, .6);
+    }
+
+.btn-secondary {
+    background-color: #FFFFFF;
+    border: 2px solid #353091;
+    color: #353091;
+}
+
+    .btn-secondary:hover, .btn-secondary:active,
+    .btn-secondary:not(:disabled):not(.disabled):active {
+        background-color: #635FAA;
+        border-color: #635FAA;
+    }
+
+.btn-on-dark {
+    background-color: #FFFFFF;
+    color: #353091;
+    border: none;
+}
+
+    .btn-on-dark:hover, .btn-on-dark:active,
+    .btn-on-dark:not(:disabled):not(.disabled):active {
+        background-color: #353091;
+        color: #FFFFFF;
+    }
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #E1E1E1;
+    color: #4C5458;
+    border: none;
+}
+/* ===================== Wells ===================== */
+.bs {
+    padding: .75rem;
+    margin-top: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+.bs-warning {
+    border-left-color: #ffc107;
+}
+
+
+.bs-secondary {
+    border-left-color: #6c757d;
+}
+
+.bs-danger {
+    border-left-color: #dc3545;
+}
+
+.bs i {
+    font-size: 22px;
+    margin-right: .3em;
+    margin-top: .6em;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+}
+
+.bs div {
+    margin-top: -7px;
+    margin-left: 46px;
+}
+
+/* ===================== Text ===================== */
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.text-warning {
+    color: #ffa63b;
+}
+
+.text-muted {
+    color: #767676;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .mobile-text-center {
+        text-align: center;
+    }
+}
+
+/* ===================== Forms ===================== */
+.form-group .form-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ===================== Spinner ===================== */
+.master-spinner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.master-inner-spinner {
+    width: 270px;
+    height: 215px;
+    background: white;
+    opacity: 1;
+}
+
+/* ===================== Margin and Padding ===================== */
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-33 {
+    margin-top: 33px;
+}
+
+
+/* ===================== Responsive ===================== */
+@media (max-width: 575px) {
+    .display-mobile {
+        display: block !important;
+    }
+
+    .header-margin {
+        margin-top: 30px;
+    }
+
+    .footer-container {
+        bottom: auto;
+    }
+}
